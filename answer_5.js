@@ -8,7 +8,7 @@ class Car {
         const currentYear = new Date().getFullYear();
         return currentYear - this.years;
     }
-    isMadeInUS(){
+    madeInUS(){
         return this.country=="US";
     }
 }
@@ -16,4 +16,4 @@ class Car {
 const car = new Car('BYD', 2021, 'China');
 console.log(car.brand);
 console.log(car.getAge());
-console.log(car.isMadeInUS());
+console.log(car.madeInUS());
